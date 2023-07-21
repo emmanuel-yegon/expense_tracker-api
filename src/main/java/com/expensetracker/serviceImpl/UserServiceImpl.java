@@ -1,6 +1,6 @@
 package com.expensetracker.serviceImpl;
 
-import com.expensetracker.constents.ExpenseConstants;
+import com.expensetracker.constants.ExpenseConstants;
 import com.expensetracker.dao.UserDao;
 import com.expensetracker.jwt.CustomerUsersDetailsService;
 import com.expensetracker.jwt.JwtFilter;
@@ -9,16 +9,12 @@ import com.expensetracker.model.User;
 import com.expensetracker.service.UserService;
 import com.expensetracker.utils.ExpenseUtils;
 import com.expensetracker.wrapper.UserWrapper;
-import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
-import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.CachingUserDetailsService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.expensetracker.constents;
+package com.expensetracker.constants;
 
 public class ExpenseConstants {
 

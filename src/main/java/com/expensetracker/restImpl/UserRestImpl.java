@@ -1,6 +1,6 @@
 package com.expensetracker.restImpl;
 
-import com.expensetracker.constents.ExpenseConstants;
+import com.expensetracker.constants.ExpenseConstants;
 import com.expensetracker.rest.UserRest;
 import com.expensetracker.service.UserService;
 import com.expensetracker.utils.ExpenseUtils;
