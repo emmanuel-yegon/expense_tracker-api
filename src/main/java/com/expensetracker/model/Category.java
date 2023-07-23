@@ -8,6 +8,11 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import java.io.Serializable;
 
+@NamedQuery(name = "Category.getAllCategory", query = "select new com.expensetracker.wrapper.CategoryWrapper(c.id,c.title,c.description,c.user.id) from Category c ")
+
+@NamedQuery(name = "Category.getCategoryById", query = "select new com.expensetracker.wrapper.CategoryWrapper(c.id,c.title,c.description) from Category c where c.id=:id")
+
+
 @Data
 @Entity
 @DynamicUpdate
